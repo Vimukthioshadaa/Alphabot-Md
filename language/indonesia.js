@@ -2,32 +2,32 @@ exports.private = () =>{
 	return`Fitur hanya bisa di gunakan di private chat`
 	}
 exports.wait = () => {
-    return `⏳ Mohon tunggu sebentar~`
+    return `⏳කරුණාකර මොහොතක් ඉන්න~`
 }
 
 exports.ok = () => {
-    return `✅ Done. Ok desu~`
+    return `✅ හරි Done~`
 }
 
 exports.err = () => {
-    return `⚠️ Fitur Sedang Error`
+    return `⚠️ දෝෂය මධ්යස්ථ විශේෂාංග`
 }
 exports.erorLink = () => {
-    return `⚠️ Link nya error`
+    return `⚠️ සබැඳිය දෝෂයකි`
 }
 exports.media = () => {
-    return `Silahkan pilih media yang ingin kamu download`
+    return `කරුණාකර ඔබට බාගත කිරීමට අවශ්‍ය මාධ්‍යය තෝරන්න`
 }
 exports.replyImg = (prefix, command) => {
     return `Kirim/Reply Foto Dengan Caption ${prefix + command}`
 }
 
 exports.wrongFormat = (prefix) => {
-    return `Format salah ❎ Silakan cek cara penggunaan di *${prefix}allmenu*.`
+    return `වැරදි ආකෘතියක් කරුණාකර භාවිතා කරන්නේ කෙසේදැයි පරීක්ෂා කරන්න di *${prefix}allmenu*.`
 }
 
 exports.emptyMess = () => {
-    return `❎ Harap masukkan pesan yang ingin disampaikan!`
+    return `❎ කරුණාකර ඔබට පැවසීමට අවශ්‍ය පණිවිඩය ඇතුළත් කරන්න!`
 }
 
 exports.cmdNotFound = (cmd, prefix) => {
@@ -35,23 +35,23 @@ exports.cmdNotFound = (cmd, prefix) => {
 }
 
 exports.ownerOnly = () => {
-    return `❎ Command ini khusus Owner!`
+    return `❎ Cමෙම විධානය විශේෂයෙන්ම අයිතිකරු සඳහා වේr!`
 }
 
 exports.doneOwner = () => {
-    return `✅  ️Sudah selesai, Owner ~`
+    return `✅  ️ඒක ඉවරයි අයිතිකාරයා ~`
 }
 
 exports.groupOnly = () => {
-    return `👥  Command ini hanya bisa digunakan di dalam grup!`
+    return `👥  මෙම විධානය භාවිතා කළ හැක්කේ කණ්ඩායම් වශයෙන් පමණි!`
 }
 
 exports.adminOnly = () => {
-    return `🙅  Command ini hanya bisa digunakan oleh admin grup!`
+    return `🙅  මෙම විධානය භාවිතා කළ හැක්කේ කණ්ඩායම් පරිපාලකයින්ට පමණි!`
 }
 
 exports.nhFalse = () => {
-    return `Kode tidak valid!`
+    return `වලංගු නොවන කේතය!`
 }
 
 exports.listBlock = (blockNumber) => {
@@ -61,41 +61,40 @@ Total diblokir: *${blockNumber.length}* user\n`
 }
 
 exports.notAdmin = () => {
-    return `❎ User bukan seorang admin! ❎`
+    return `❎ පරිශීලක පරිපාලකයෙක් නොවේ! ❎`
 }
 
 exports.adminAlready = () => {
-    return `❎ Tidak  dapat mem-promote user yang merupakan admin!`
+    return `❎ පරිපාලකයෙකු වන පරිශීලකයෙකු ප්‍රවර්ධනය කළ නොහැක!`
 }
 
 exports.botNotAdmin = () => {
-    return `Jadikan bot sebagai admin terlebih dahulu! 🙏`
+    return `මුලින්ම bot එක admin කෙනෙක් කරන්න! 🙏`
 }
 
 exports.received = (pushname) => {
     return `
 Halo ${pushname}!
-Terima kasih telah melapor, laporanmu akan kami segera terima.`
+වාර්තා කිරීම ගැන ඔබට ස්තුතියි, ඔබගේ වාර්තාව අපට ඉක්මනින් ලැබෙනු ඇත.`
 }
 
 exports.videoLimit = () => {
-    return `Ukuran file terlalu besar!`
+    return `ගොනු ප්‍රමාණය ඉතා විශාලයි!`
 }
 
 exports.notNum = (q) => {
-    return `"${q}", bukan angka!`
+    return `"${q}", අංකයක් නොවේ!`
 }
 exports.menunya = (salam, pushname) =>{
 	return`Hai kak ${pushname} 👋 selamat ${salam} , 
-saya Alphabot-Md, bot ini adalah Beta Multi-Device Whatsapp. 
-Jika kamu menemukan semacam bug atau kesalahan mohon dimaklumi dulu ya, 
-lapor owner agar segera di perbaiki 🙏      
+saya KΛVΣΣ, bot ini adalah Beta Multi-Device Whatsapp. 
+මෙය whastapp User Bot කෙනෙකි! ඔබට අවශය විදනය තොරන්න 🙏      
 `
 }
 exports.listMenu = (time, salam, pushname, prefix) => {
     return `*Selamat ${salam} ${pushname} 😖*
 *⌚Time Server : ${time}*
-*📚 List-Menu Alphabot-Md :*
+*📚 List-Menu KΛVΣΣ :*
 
 ╭─❒ 「 Bot Info 」 
 ├ ${prefix}owner
@@ -540,16 +539,7 @@ exports.listMenu = (time, salam, pushname, prefix) => {
 ├ ${prefix}memegen [text|text]
 ╰❒
 ╭─❒ 「 TqTo 」 
-├ My God
-├ My Parents
-├ Fatih A.
-├ Ferdi
-├ DikaArdnt
-├ Mhankbarbar
-├ Nurutomo
-├ Rashid
-├ ZeeoneOfc
-├ Penyedia Module
+├ විමුක්ති ඔශද
 ╰❒ And All Support
 
     `
@@ -559,36 +549,36 @@ exports.rules = (prefix) => {
     return `
 *── 「 RULES AND FAQ 」 ──*
 
-1. Jangan spam bot. 🙅
+1. bot හට spam කිරිමෙන් වලකින්න. 🙅
 Sanksi: *❎ WARN/SOFT BLOCK*
 
-2. Jangan telepon bot. ☎️
+2. බොට් එකට කතා කරන්න එපා. ☎️
 Sanksi: *❎ SOFT BLOCK*
 
-3. Jangan mengeksploitasi bot.😖
+3. බොට් එක ගසාකන්න එපා.😖
 Sanksi: *PERMANENT BLOCK*
 
-🗯️ Bot tidak atau lambat merespon ?
-➡️ Mungkin dipengaruhi oleh jaringan, signal, banned oleh Whatsapp dan beberapa asalan. Tetap patuhi rules‼️
+🗯️ ප්‍රතිචාර දැක්වීමට බොට් නැත හෝ මන්දගාමී වේ ?
+➡️ ජාලය, සංඥා, Whatsapp මගින් තහනම් කිරීම සහ යම් හේතුවක් නිසා බලපෑ හැකිය. දිගටම නීති පිළිපදින්න‼️
 
-🗯️ Dimana saya bisa mendapatkan Script dari bot ini ?
-➡️ Script ini masih private dan tidak pernah diperjual belikan ,bijaklah dalam mengetahui penipu.
+🗯️ මට කොහෙන්ද මේ bot එකෙන් script එක ?
+➡️ මෙම ස්ක්‍රිප්ටය තවමත් පුද්ගලික වන අතර කිසි විටෙක වෙළඳාම් කර නොමැත, වංචාකරුවන් දැන ගැනීමට බුද්ධිමත් වන්න.
 
-🗯️ Boleh saya menambah ke grup?
-➡️ Untuk sementara bot dalam status free to add.
+🗯️ මට group එකට add කරන්න පුලුවන්ද?
+➡️ ටික වේලාවකට බොට් එකට තත්ත්‍වය එක් කිරීමට නොමිලේ.
 
-🗯️ Prefixnya apa ya?
-➡️ Bot ini menggunakan multi prefix. Berarti anda bisa menggunakan prefix #, . , Dan prefix wajar lainnya.
+🗯️ උපසර්ගය කුමක්ද??
+➡️ මෙම බොට් බහු උපසර්ග භාවිතා කරයි. එයින් අදහස් වන්නේ ඔබට #, උපසර්ගය භාවිතා කළ හැකි බවයි. , සහ වෙනත් සාධාරණ උපසර්ගය.
 
-🗯️ Kak, kok syaa chat owner tidak direspon?
-➡️ Owner hanya merespon pertanyaan seputar bot Dan kendala eror, tidak untuk kenalan ataupun mengemis script.
+🗯️සිස්, කොහොමද චැට් හිමිකරු ප්‍රතිචාර නොදක්වන්නේ?
+➡️ හිමිකරු ප්‍රතිචාර දක්වන්නේ බොට්ස් සහ දෝෂ ගැටලු පිළිබඳ ප්‍රශ්නවලට පමණි, හඳුනන අය සඳහා හෝ ස්ක්‍රිප්ට් හිඟාකෑමට නොවේ.
 
 
-Jika sudah dipahami rules-nya, silakan ketik *${prefix}allmenu* untuk memulai!
+ඔබට නීති තේරෙනවා නම් කරුණාකර ටයිප් කරන්න *${prefix}allmenu* ආරම්භ කිරීමට!
 
-⚠️ Segala kebijakan dan ketentuan Alphabot di pegang oleh owner dan segala perubahan kebijakan, sewaktu waktu owner berhak mencabut, memblokir user(*﹏*) 
+⚠️ Alphabot හි සියලුම ප්‍රතිපත්ති සහ ප්‍රතිපාදන හිමිකරු විසින් දරනු ලබන අතර සියලුම ප්‍රතිපත්ති වෙනස් කිරීම්, ඕනෑම අවස්ථාවක හිමිකරුට පරිශීලකයන් අවලංගු කිරීමට, අවහිර කිරීමට අයිතිය ඇත (*﹏*)
 
-Arigatou Gozaimasu! Untuk kalian user ramah dan Beberapa orang yg ikut membantu juga dalam project pembuatan Alphabot
+බොහොම ස්තූතියි! ඔබ සඳහා, මිත්‍රශීලී පරිශීලකයින් සහ KΛVΣΣ නිර්මාණය කිරීමේ ව්‍යාපෘතියට උදවු කළ සමහර පුද්ගලයින් සඳහා
 😖🙏
 `
 }
@@ -609,7 +599,7 @@ exports.source = () =>{
 return`*── 「 SOURCE 」 ──*
 
 Base : https://github.com/DikaArdnt/Hisoka-Morou
-Recode : https://github.com/zeeoneofc/Alphabot-Md
+Recode : https://github.com/Kavee2476
 `
 }
 exports.tos = (ownernomer) => {
@@ -1089,16 +1079,6 @@ return`*Others*
 
 exports.tqto = () =>{
 	return`*Thanks To*
-• My God
-• My Parents
-• Fatih A.
-• Ferdi
-• DikaArdnt
-• Mhankbarbar
-• Nurutomo
-• Rashid
-• ZeeoneOfc
-• Penyedia Module
-• And All Support
+•විමුක්ති ඔශද
 `
 }
